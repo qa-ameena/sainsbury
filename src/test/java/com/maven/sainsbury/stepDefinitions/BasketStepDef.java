@@ -17,7 +17,7 @@ public class BasketStepDef {
     }
 
     @And("^user should be abke to able to pick size\"([^\"]*)\"$")
-    public void userShouldBeAbkeToAbleToPickSize(String arg0) throws Throwable {
+    public void userShouldBeAbleToAbleToPickSize(String arg0) throws Throwable {
       basket.sizeSelectionForProduct();
     }
 

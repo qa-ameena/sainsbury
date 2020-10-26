@@ -13,7 +13,7 @@ public class BasketPageObj extends DriverFactory {
     Helper helpers = new Helper();
 
 
-    @FindBy(css=".tu-c-product-card ")//webelements for the results page
+    @FindBy(css=".tu-c-product-card ")//webElements for the list of products on results page
     private List<WebElement> productList;
 
     @FindBy(css="#productVariantSize") // to select the size
@@ -21,7 +21,7 @@ public class BasketPageObj extends DriverFactory {
 
 
     @FindBy(css="#AddToCart")
-   private WebElement addtobasket;
+   private WebElement addToBasket;
 
     @FindBy(css="#minicart_data")
     private WebElement cartDetails;
@@ -45,7 +45,7 @@ public class BasketPageObj extends DriverFactory {
 
     public void addingProductToBasket(){
         helpers.scrolldownoptions();
-        addtobasket.click();
+        addToBasket.click();
     }
 
 public String assertCartDetails(){
