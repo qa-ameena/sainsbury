@@ -1,0 +1,206 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "open homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1958844200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the homepage",
+            "match": {
+              "location": "HomePageStepDef.userIsOnTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5029891600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user must be able to hover over the subheader options \"Tu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tu",
+                  "offset": 55
+                }
+              ],
+              "location": "ResultsStepDef.userMustBeAbleToHoverOverTheSubheaderOptions(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9278506600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "select a product under selected subheader \"Women\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women",
+                  "offset": 43
+                }
+              ],
+              "location": "ResultsStepDef.selectAProductUnderSelectedSubheader(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13296267200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is able to select the subheader filter\"New Arrivals\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Arrivals",
+                  "offset": 44
+                }
+              ],
+              "location": "ResultsStepDef.userIsAbleToSelectTheSubheaderFilter(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 25,
+            "value": "#  And user is able to select the subheader filters\"Blouses\""
+          },
+          {
+            "line": 26,
+            "value": "#  And user is able to select the subheader filters\"10\""
+          },
+          {
+            "line": 27,
+            "value": "#  And user is able to select the subheader filters\"£20-£29.99\""
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 35574544200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "user should be able to add a product randomly",
+        "description": "",
+        "id": "customer-should-be-able-to-search-for-a-product;user-should-be-able-to-add-a-product-randomly",
+        "after": [
+          {
+            "result": {
+              "duration": 50700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6428330600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user should be able to pick a product to add randomly",
+            "match": {
+              "location": "BasketStepDef.userShouldBeAbleToPickAProductToAddRandomly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5178335900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user should be abke to able to pick size\"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 41
+                }
+              ],
+              "location": "BasketStepDef.userShouldBeAbkeToAbleToPickSize(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 815200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user should be able to select required quantity \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 49
+                }
+              ],
+              "location": "BasketStepDef.userShouldBeAbleToSelectRequiredQuantity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1167057400,
+              "error_message": "java.lang.AssertionError: No of items not displaying\nExpected: a string containing \"1 item\"\n     but: was \"\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat com.maven.sainsbury.stepDefinitions.BasketStepDef.userShouldBeAbleToViewTheProductInTheBasket(BasketStepDef.java:33)\r\n\tat ✽.Then user should be able to view the product in the basket(search.feature:34)\r\n",
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "user should be able to view the product in the basket",
+            "match": {
+              "location": "BasketStepDef.userShouldBeAbleToViewTheProductInTheBasket()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@basket"
+          }
+        ]
+      }
+    ],
+    "name": "Customer should be able to search for a product",
+    "description": "",
+    "id": "customer-should-be-able-to-search-for-a-product",
+    "keyword": "Feature",
+    "uri": "search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@search"
+      }
+    ]
+  }
+]

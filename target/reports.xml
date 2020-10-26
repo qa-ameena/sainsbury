@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="77.912644">
+<testcase classname="Customer should be able to search for a product" name="user should be able to add a product randomly" time="77.912644">
+<failure message="java.lang.AssertionError: No of items not displaying&#10;Expected: a string containing &quot;1 item&quot;&#10;     but: was &quot;&quot;&#13;&#10;&#9;at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;&#10;&#9;at com.maven.sainsbury.stepDefinitions.BasketStepDef.userShouldBeAbleToViewTheProductInTheBasket(BasketStepDef.java:33)&#13;&#10;&#9;at ✽.Then user should be able to view the product in the basket(search.feature:34)&#13;&#10;"><![CDATA[Given user is on the homepage...............................................passed
+When user must be able to hover over the subheader options "Tu".............passed
+And select a product under selected subheader "Women".......................passed
+And user is able to select the subheader filter"New Arrivals"...............passed
+And user should be able to pick a product to add randomly...................passed
+And user should be abke to able to pick size"10"............................passed
+And user should be able to select required quantity "1".....................passed
+Then user should be able to view the product in the basket..................failed
+
+StackTrace:
+java.lang.AssertionError: No of items not displaying
+Expected: a string containing "1 item"
+     but: was ""
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.maven.sainsbury.stepDefinitions.BasketStepDef.userShouldBeAbleToViewTheProductInTheBasket(BasketStepDef.java:33)
+	at ✽.Then user should be able to view the product in the basket(search.feature:34)
+]]></failure>
+</testcase>
+</testsuite>
