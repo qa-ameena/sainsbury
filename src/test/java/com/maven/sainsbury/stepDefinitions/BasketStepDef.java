@@ -16,7 +16,7 @@ public class BasketStepDef {
         basket.randomProductSelection();
     }
 
-    @And("^user should be abke to able to pick size\"([^\"]*)\"$")
+    @And("^user should be able to able to pick size\"([^\"]*)\"$")
     public void userShouldBeAbleToAbleToPickSize(String arg0) throws Throwable {
       basket.sizeSelectionForProduct();
     }

@@ -12,19 +12,20 @@ import java.util.Random;
 
 public class Helper extends DriverFactory {
 
-    public int radomMethod(int sizeselection){
+    //random selection of product
+    public int radomMethod(int sizeSelection){
         Random random = new Random();
-        return random.nextInt(sizeselection-1); //To allocate number randomly and select product randomly
+        return random.nextInt(sizeSelection-1); //To allocate number randomly and select product randomly
             }
 public void hoverAction(WebElement items) {
     Actions actions = new Actions(driver);
     actions.moveToElement(items).build().perform();
 }
-public void setWebDriverwaits(WebElement item){
+public void setWebDriverWaits(WebElement item){
     WebDriverWait waits = new WebDriverWait(driver, 20);
     waits.until(ExpectedConditions.elementToBeClickable(item));
     }
-    public void scrolldownoptions(){
+    public void scrollDownOptions(){
         JavascriptExecutor js=(JavascriptExecutor)driver;
         //js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
         js.executeScript("window.scrollTo(0,300)");

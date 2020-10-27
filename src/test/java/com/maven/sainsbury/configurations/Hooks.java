@@ -10,7 +10,7 @@ public class Hooks  {
         driverfactory.setDriver("chrome");
         driverfactory.setUrl("https://www.sainsburys.co.uk/");
         driverfactory.maximiseWindow();
-        //driverfactory.deleteCookies();
+       //driverfactory.deleteCookies();
         driverfactory.timeOuts();
       //  driverfactory.setAcceptCookies();
            }

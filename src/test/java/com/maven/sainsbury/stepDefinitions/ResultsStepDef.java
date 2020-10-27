@@ -26,6 +26,6 @@ public class ResultsStepDef {
 
     @And("^user is able to select the subHeader filters\"([^\"]*)\"$")
     public void userIsAbleToSelectTheSubHeaderFilters(String filterCategory) throws Throwable {
-        resultsPage.filtersforsub_subheaders(filterCategory);
+        resultsPage.filtersForSub_SubHeaders(filterCategory);
     }
 }
