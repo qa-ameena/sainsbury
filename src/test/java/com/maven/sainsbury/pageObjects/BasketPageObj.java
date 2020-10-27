@@ -44,7 +44,7 @@ public class BasketPageObj extends DriverFactory {
     }
 
     public void addingProductToBasket(){
-        helpers.scrolldownoptions();
+        helpers.scrollDownOptions();
         addToBasket.click();
     }
 
